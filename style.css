@@ -1,0 +1,120 @@
+*{
+    font-size: 24px;
+    font-family: 'Archivo', sans-serif;
+    color: black;
+    widows: 100%;
+}
+h1{
+    display: inline-block;
+}
+#top{
+    width: auto;
+    height: 100px;
+    background-color: rgb(148, 77, 148);
+    position: sticky;
+}
+#topuitklapmenu{
+    color: white;
+    border: white solid 1px;
+    padding: 5px 15px;
+    margin: 15px 15px;
+    font-size: 2rem;
+}
+#topuitklapmenu>li{
+    display: none;
+}
+#topuitklapmenu>li:hover{
+    display: none;
+}
+#menubar{
+    width: auto;
+    height: 100px;
+    background-color: white;
+}
+#menubaruitklapmenu{
+    color: black;
+    border: black solid 1px;
+    padding: 5px 15px;
+    margin: 15px 15px;
+    display: inline-block;
+    font-size: 2rem;
+}
+#logo{
+    width: 250px;
+    height: 80px;
+    float: right;
+    margin-right: 1em;
+}
+.uitklapmenu{
+    font-size: 3rem;
+    color: black;
+}
+#afbeelding1{
+    width: 100%;
+}
+#kopspace1{
+    margin: 0 auto;
+    border-bottom: purple solid 1px;
+    width: 90%;
+    text-align: 0.5em;
+}
+#auto{
+    margin-left: 2em;
+}
+#text1space{
+    width: 100%;
+}
+#text1{
+    width: 80%;
+    margin: 1em auto;
+}
+#proefles{
+    margin: 1em 3em;
+    width: 75%;
+    height: 25%;
+    padding: 1em;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(148, 77, 148);
+}
+#kopspace2{
+    margin: 0 auto;
+    border-bottom: purple solid 1px;
+    width: 90%;
+    text-align: 0.5em;
+}
+#map{
+    margin-left: 2em;
+}
+#text2space{
+    width: 100%;
+}
+#text2{
+    width: 80%;
+    margin: 1em auto;
+}
+#hier{
+    color: blue;
+}
+#kopspace3{
+    margin: 0 auto;
+    border-bottom: purple solid 1px;
+    width: 90%;
+    text-align: 0.5em;
+}
+#hat{
+    margin-left: 2em;
+}
+#text3space{
+    width: 100%;
+}
+#text3{
+    width: 80%;
+    margin: 1em auto;
+}
+iframe{
+    width: 90%;
+    height: 10rem;
+    margin-left: 1em;
+    margin-right: 1em;
+}
