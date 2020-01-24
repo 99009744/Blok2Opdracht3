@@ -3,41 +3,43 @@
     font-family: 'Archivo', sans-serif;
     color: black;
     widows: 100%;
+    margin: 0;
 }
 h1{
     display: inline-block;
 }
 #top{
-    width: auto;
+    width: 100%;
     height: 100px;
     background-color: rgb(148, 77, 148);
-    position: sticky;
+    position: fixed;
+    margin-top: 0;
+    z-index: 1;                 /*zodat de witte uitklapmenu niet over de paarse heen gaat. */
 }
-#topuitklapmenu{
-    color: white;
-    border: white solid 1px;
-    padding: 5px 15px;
-    margin: 15px 15px;
-    font-size: 2rem;
+#menu{
+    padding: 0;
+    list-style-type: none;
+    height: 0;
+    overflow: hidden;
 }
-#topuitklapmenu>li{
-    display: none;
-}
-#topuitklapmenu>li:hover{
-    display: none;
-}
-#menubar{
-    width: auto;
-    height: 100px;
-    background-color: white;
-}
-#menubaruitklapmenu{
-    color: black;
+#menu>li{
+    background-color: rgb(148, 77, 148);
+    width: 100%;
+    height: auto;
     border: black solid 1px;
-    padding: 5px 15px;
-    margin: 15px 15px;
-    display: inline-block;
-    font-size: 2rem;
+}
+#menu2{
+    padding: 0;
+    list-style-type: none;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+#menu2>li{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border: black solid 1px;
 }
 #logo{
     width: 250px;
@@ -45,6 +47,45 @@ h1{
     float: right;
     margin-right: 1em;
 }
+#topuitklapmenu{
+    color: white;
+    border: white solid 1px;
+    padding: 5px 15px;
+    margin: 15px 5px;
+    font-size: 2rem;
+}
+#topuitklapmenu>li{
+    width: 15em;
+    height: 2.5em;
+    border: black solid 1px;
+    background-color: rgb(148, 77, 148);
+    list-style-type: none;
+    height: 0;
+    overflow: hidden
+}   
+.dropDownContent{
+    width: 100%;
+    position: relative; 
+    line-height: 3em;
+}
+#topuitklapmenu:hover{
+    display: inline-block;;
+}
+#menubar{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-top: 4.2em;
+}
+#menubaruitklapmenu{
+    color: black;
+    border: black solid 1px;
+    padding: 5px 15px;
+    margin: 15px 5px;
+    display: inline-block;
+    font-size: 2rem;
+}
+
 .uitklapmenu{
     font-size: 3rem;
     color: black;
@@ -53,13 +94,14 @@ h1{
     width: 100%;
 }
 #kopspace1{
-    margin: 0 auto;
+    margin: 20px auto;
     border-bottom: purple solid 1px;
     width: 90%;
     text-align: 0.5em;
+    padding-bottom: 1rem;
 }
 #auto{
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 #text1space{
     width: 100%;
@@ -78,10 +120,11 @@ h1{
     background-color: rgb(148, 77, 148);
 }
 #kopspace2{
-    margin: 0 auto;
+    margin: 20px auto;
     border-bottom: purple solid 1px;
     width: 90%;
     text-align: 0.5em;
+    padding-bottom: 1rem;
 }
 #map{
     margin-left: 2em;
@@ -97,10 +140,11 @@ h1{
     color: blue;
 }
 #kopspace3{
-    margin: 0 auto;
+    margin: 20px auto;
     border-bottom: purple solid 1px;
     width: 90%;
     text-align: 0.5em;
+    padding-bottom: 1rem;
 }
 #hat{
     margin-left: 2em;
@@ -114,7 +158,200 @@ h1{
 }
 iframe{
     width: 90%;
-    height: 10rem;
+    height: 15rem;
     margin-left: 1em;
-    margin-right: 1em;
 }
+#footer{
+    background-color: rgb(148, 77, 148);
+    text-align: center;
+}
+@media (min-width:769px){
+    *{
+    
+    }
+    #top{
+       
+        background-color: rgb(148, 77, 148);
+        position: fixed;
+        margin-top: 0;
+        height: 50px;
+    }
+    #menubar{
+        background-color: white;
+        padding-top: 3rem;
+        display: inline-block;
+    }
+    #logo{
+        float: left;
+        width: 350px;
+        height: 100px;
+    }
+    #topuitklapmenu{
+        display: none !important;
+    }
+    #menubaruitklapmenu{
+        display: none !important;
+    }
+    #menu{
+        padding: 0;
+        list-style-type: none;
+        height: 50px;
+        overflow: hidden;
+        display: inline;
+        margin-left: 12em;
+    }
+    #menu>li{
+        position: relative;
+        display: inline;
+        border: none;
+        padding: 0;
+        padding-left: 5em;
+    }
+    #menu2{
+        padding: 0;
+        list-style-type: none;
+        height: 50px;
+        overflow: hidden;
+        display: inline;
+        margin-left: 15em;
+        padding-top: 1.5em;
+    }
+    #menu2>li{
+        position: relative;
+        display: inline;
+        border: none;
+        padding: 0;
+        padding-left: 4rem;
+    }
+    #textspace{
+        display: grid;
+        width: 70rem;
+        margin: 0 auto;
+        grid-template-columns:  auto auto auto;
+        grid-template-rows: 5rem 20rem;
+    }
+    #kopspace1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #kopspace2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    #kopspace3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    iframe{
+        width: 75%;
+        height: auto;
+        height: 30rem;
+        margin: auto;
+        display: block;
+    }
+    #textspace1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #textspace2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #textspace3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } 
