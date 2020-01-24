@@ -14,7 +14,7 @@ h1{
     background-color: rgb(148, 77, 148);
     position: fixed;
     margin-top: 0;
-    z-index: 1;                 /*zodat de witte uitklapmenu niet over de paarse heen gaat. */
+    z-index: 120;                 /*zodat de witte uitklapmenu niet over de paarse heen gaat. */
 }
 #menu{
     padding: 0;
@@ -32,8 +32,10 @@ h1{
     padding: 0;
     list-style-type: none;
     height: 0;
+    width: 100%;
     overflow: hidden;
     position: absolute;
+    z-index:100;
 }
 #menu2>li{
     background-color: white;
@@ -118,6 +120,7 @@ h1{
     text-align: center;
     display: inline-block;
     background-color: rgb(148, 77, 148);
+    border: black solid 1px;
 }
 #kopspace2{
     margin: 20px auto;
@@ -166,19 +169,15 @@ iframe{
     text-align: center;
 }
 @media (min-width:769px){
-    *{
-    
-    }
     #top{
-       
         background-color: rgb(148, 77, 148);
         position: fixed;
         margin-top: 0;
-        height: 50px;
+        height: 35px;
     }
     #menubar{
         background-color: white;
-        padding-top: 3rem;
+        padding-top: 2rem;
         display: inline-block;
     }
     #logo{
@@ -187,15 +186,14 @@ iframe{
         height: 100px;
     }
     #topuitklapmenu{
-        display: none !important;
+        display: none;
     }
     #menubaruitklapmenu{
-        display: none !important;
+        display: none;
     }
     #menu{
         padding: 0;
         list-style-type: none;
-        height: 50px;
         overflow: hidden;
         display: inline;
         margin-left: 12em;
@@ -210,18 +208,17 @@ iframe{
     #menu2{
         padding: 0;
         list-style-type: none;
-        height: 50px;
-        overflow: hidden;
-        display: inline;
+        height: auto !important;
+        display: inline-block;
         margin-left: 15em;
-        padding-top: 1.5em;
+        padding-top: 1em;
     }
     #menu2>li{
-        position: relative;
+        position: relative !important;
         display: inline;
         border: none;
         padding: 0;
-        padding-left: 4rem;
+        padding-left: 3.5rem;
     }
     #textspace{
         display: grid;
@@ -273,6 +270,7 @@ iframe{
   /* Hide the images by default */
   .mySlides {
     display: none;
+    z-index: 80;
   }
   
   /* Next & previous buttons */

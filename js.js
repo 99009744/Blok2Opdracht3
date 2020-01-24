@@ -20,6 +20,8 @@ function showMenu2(){
     }
     else{
         menu.style.height = "0px";
+        menu.style.width = "100%";
+        
     }
 }
 var slideIndex = 1;
